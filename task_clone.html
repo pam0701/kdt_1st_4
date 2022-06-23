@@ -19,6 +19,7 @@
         }
         body{
             font-family: 'EarlyFontDiary';
+            margin: 0;
         }
         .container{
             position: relative;
@@ -26,29 +27,27 @@
             Background-position: 690px 30px;
             background-image: url("https://mblogthumb-phinf.pstatic.net/20160127_177/krazymouse_1453865104404DjQIi_PNG/%C4%AB%C4%AB%BF%C0%C7%C1%B7%BB%C1%EE_%B6%F3%C0%CC%BE%F0.png?type=w2");
             background-size: contain;
-            margin: 0;
             background-repeat: no-repeat;
             background-attachment: fixed;
             z-index: 999;
         }
         .top_container{
             position: fixed;
-            top: 2px;
             display: flex;
+            top: 0;
             width: 100%;
             height: 70px;
             background-color: rgba(221, 143, 135, 0.725);
             background-attachment: fixed;
             z-index: 1;
             flex-direction: row;
-            justify-content: space-evenly;
+            justify-content: space-around;
             align-items: center;
-           
         }
         .bottom_container{
             position: fixed;
-            bottom: 2px;
             display: flex;
+            bottom: 0;
             width: 100%;
             height: 70px;
             background-color: rgb(166, 232, 216);
@@ -70,7 +69,7 @@
             font-size: 15px;
             color: rgba(221, 143, 135, 0.725);
             display: inline-flex;
-            width: 50px;
+            width: 70px;
             height: 50px;
             font-weight: 700;
             background-color: rgba(26, 65, 123, 0.738);
@@ -79,34 +78,91 @@
             align-items: center;
             justify-content: center;
             flex-basis: 150px;
-            
         }
         .item:hover{
-            background-color: chocolate
+            background-color: chocolate;
         }
-        .item1 { color: rgb(166, 232, 216); flex-grow: 1;}
-        .item2 { color: rgb(166, 232, 216); flex-grow: 1;}
-        .item3 { color: rgb(166, 232, 216); flex-grow: 1;}
-        .item4 { color: rgb(166, 232, 216); flex-grow: 2;}
-    </style>
+        .item1:hover, .item2:hover, .item3:hover, .item4:hover{
+            background-color: chocolate;
+        } 
+
+        .item1 { 
+            color: rgb(166, 232, 216);
+            background-color: rgba(28, 85, 220, 0.512);
+            flex-basis: 0; 
+            flex-grow: 1;
+            font-size: 15px;
+            display: inline-flex;
+            width: 70px;
+            height: 50px;
+            font-weight: 700;
+            border-radius: 30px;
+            align-items: center;
+            justify-content: center;
+        }
+        .item2 { 
+            color: rgb(166, 232, 216); 
+            background-color: rgba(28, 85, 220, 0.512);
+            flex-basis: 0; 
+            flex-grow: 1;
+            font-size: 15px;
+            display: inline-flex;
+            width: 70px;
+            height: 50px;
+            font-weight: 700;
+            border-radius: 30px;
+            align-items: center;
+            justify-content: center;
+        
+        }
+        .item3 { 
+            color: rgb(166, 232, 216);
+            background-color: rgba(28, 85, 220, 0.512);
+            color: rgb(166, 232, 216); 
+            flex-basis: 0; 
+            flex-grow: 1;
+            font-size: 15px;
+            display: inline-flex;
+            width: 70px;
+            height: 50px;
+            font-weight: 700;
+            border-radius: 30px;
+            align-items: center;
+            justify-content: center;
+        }
+        .item4 { 
+            color: rgb(166, 232, 216);
+            background-color: rgba(28, 85, 220, 0.512);
+            color: rgb(166, 232, 216); 
+            flex-basis: 0; 
+            flex-grow: 2;
+            font-size: 15px;
+            display: inline-flex;
+            width: 70px;
+            height: 50px;
+            font-weight: 700;
+            border-radius: 30px;
+            align-items: center;
+            justify-content: center;
+        }
+</style>
 </head>
 <body>
     <div class="container">
         <div class = gradient_box></div>
-        <div class ="img"></div>
     
     <div class ="top_container">
-        <div class="item item">item1</div>
-        <div class="item item">item2</div>
-        <div class="item item">item3</div>
-        <div class="item item">item4</div>
+        <div class="item">item1</div>
+        <div class="item">item2</div>
+        <div class="item">item3</div>
+        <div class="item">item4</div>
     </div>
     
     <div class ="bottom_container">
-        <div class="item item1">고정 비율1</div>
-        <div class="item item2">고정 비율2</div>
-        <div class="item item3">고정 비율3</div>
-        <div class="item item4">고정 비율4</div> 
+        <div class="item1">고정 비율1</div>
+        <div class="item2">고정 비율2</div>
+        <div class="item3">고정 비율3</div>
+        <div class="item4">고정 비율4</div> 
     </div>
     </div>
 </div>
